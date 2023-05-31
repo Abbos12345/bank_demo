@@ -1,0 +1,329 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.primary-btn{
+    background-color: rgba(254, 230, 0, 1);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 9px 17px;
+    border-radius: 8px;
+    border: none;
+    color: rgba(43, 45, 51, 1);
+    cursor: pointer;
+}
+
+.secondary-btn{
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 9px 20px;
+    color: rgba(43, 45, 51, 1);
+    border: 1px solid rgba(213, 213, 214, 1);
+    border-radius: 8px;
+}
+
+.container{
+    background-color: rgba(246, 246, 246, 1);
+    width: 1350px;
+    height: 1380px;
+    margin: 0 auto;
+}
+
+/* ====== Header ======= */
+
+.header{
+    display: flex;
+    background-color: rgba(38, 73, 155, 1);
+    width: 100%;
+    height: 72px;
+}
+
+.header > div:not(:last-child){
+    border-right: 1px solid #fff;
+}
+
+.header > div{
+    display: flex;
+    align-items: center;
+    padding-left: 32px;
+}
+
+.header > div:not(:is(:first-child, :last-child)){
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.payment__header-logo{
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+    width: 247px;
+    height: 100%;
+}
+
+.payment__header-name{
+    width: 344px;
+    height: 100%;
+    gap: 6px;
+}
+
+.payment__header-name__name-tag, .payment__header-date__type-tag{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #fff;
+}
+
+.payment__header-name__company-tag, .payment__header-date__date-tag{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #ffffff64;
+}
+
+.payment__header-date{
+    width: 248px;
+    height: 100%;
+    gap: 8px;
+}
+
+.payment__header-date__date-tag:before{
+    content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    background-color: rgba(25, 178, 141, 1);
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.payment__header-create{
+    width: 508px;
+    height: 100%;
+}
+
+.payment__header-create > button:nth-child(2){
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ffffff80;
+    margin-left: 32px;
+}
+
+.payment__header-create > button:nth-child(2) > img{
+    margin-right: 8px;
+}
+
+/* ======== Main ======= */
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.aside{
+    background-color: #fff;
+    width: 248px;
+    height: 100vh;
+}
+
+.btn__container{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    user-select: none;
+}
+
+.btn__container > .active{
+    border-left: 4px solid rgba(38, 73, 155, 1);
+    background-color: rgba(248, 248, 248, 1);
+    color: rgba(38, 73, 155, 1);
+    transition: all 0.3s;
+}
+
+.btn__container > a{
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    padding: 15px 0;
+    text-decoration: none;
+    color: rgba(43, 45, 51, 1);
+}
+
+.btn__container > a > span:nth-child(2){
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-left: 10px;
+}
+
+.btn__container > a > span > img{
+    color: rgba(38, 73, 155, 1);
+    margin-left: 25px;
+}
+
+.payment__container{
+    width: 1054px;
+    height: max-content;
+    margin: 0 auto;
+    padding-top: 24px;
+}
+
+.payment__container > a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    color: rgba(128, 129, 133, 1);
+    text-decoration: none;
+}
+
+.payment__container-content{
+    background-color: #fff;
+    width: 100%;
+    height: 1156px;
+    margin-top: 24px;
+    padding-top: 24px;
+    border-radius: 12px;
+    padding-inline: 24px;
+}
+
+.payment__container-content-text{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: rgba(43, 45, 51, 1);
+    margin-bottom: 24px;
+}
+
+.payment__container-content__navigation{
+    margin-bottom: 24px;
+}
+
+.payment__container-content__navigation > a{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-decoration: none;
+    color: rgba(128, 129, 133, 1);
+    padding-bottom: 12px;
+}
+
+.payment__container-content__navigation > a:not(:last-child){
+    margin-right: 24px;
+}
+
+.payment__container-content__navigation > a:nth-child(4)::after{
+    content: "2";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(238, 80, 90, 1);
+    border-radius: 50%;
+    color: white;
+    text-align: center;
+    line-height: 22px;
+    margin-left: 8px;
+}
+
+.payment__container-content__filter{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 25px;
+}
+
+.payment__container-content__filter > button{
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.payment__container-content__filter > button:nth-child(1){
+    width: 240px;
+    height: 40px;
+    padding-left: 12px;
+}
+
+.payment__container-content__filter > button:nth-child(n+2):nth-child(-n+4){
+    padding-left: 12px;
+    width: 144px;
+    height: 40px;
+}
+
+.payment__container-content__filter > button:nth-child(6){
+    margin-left: 13px;
+}
+
+.transaction-tag{
+    display: flex;
+    width: 100%;
+    height: 44px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid rgba(170, 171, 173, 1);
+}
+
+.transaction-tag > div{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    padding-left: 12px;
+    color: rgba(170, 171, 173, 1);
+    height: 100%;
+}
+
+.transaction-tag > div:nth-child(1){
+    width: 44px;
+}
+
+.transaction-tag > div:nth-child(2){
+    width: 56px;
+}
+
+.transaction-tag > div:nth-child(3){
+    width: 104px;
+}
+
+.transaction-tag > div:nth-child(4){
+    width: 520px;
+}
+
+.transaction-tag > div:nth-child(5){
+    width: 282px;
+}
+
+.payment__container-content__transactions{
+    background-color: green;
+    width: 1006px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.transaction{
+    background-color: red;
+    width: 100%;
+    height: 98px;
+    transition: all 0.5s;
+}
+
+#myDiv{
+    background-color: yellow;
+}
+
+#myDiv.expanded {
+    height: 342px; /* Set the desired expanded height */
+}
+
+

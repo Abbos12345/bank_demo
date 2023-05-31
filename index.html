@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!-- header -->
+        <div class="header">
+            <div class="payment__header-logo">Logo</div>
+            <div class="payment__header-name">
+                <p class="payment__header-name__name-tag">Shakirov. K.K</p>
+                <p class="payment__header-name__company-tag">MCHJ "Kamoliddin Prime Plus"</p>
+            </div>
+            <div class="payment__header-date">
+                <p class="payment__header-date__type-tag">Операционный день</p>
+                <p class="payment__header-date__date-tag">02.06.2022 Открыт</p>
+            </div>
+            <div class="payment__header-create">
+                <button class="primary-btn">Создать платёж</button>
+                <button class="primary-btn">
+                    <img src="./assets/img/export.png" alt="">
+                    <span>Импорт</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- main -->
+        <div class="main">
+            <div class="aside"> 
+                <div class="btn__container">
+                    <!-- Js will add neccesety file -->
+                </div>
+            </div>
+
+            <div class="payment__container">
+                <a href="#"> &larr; Вернуться в &lt; Платежи и переводы &gt;</a>
+                <div class="payment__container-content">
+                    <p class="payment__container-content-text">Платёжные документы</p>
+
+                    <div class="payment__container-content__navigation">
+                        <a href="#">Все</a>
+                        <a href="#">Входящие</a>
+                        <a href="#">Исходящие</a>
+                        <a href="#">На подпись</a>
+                        <a href="#">Черновики</a>
+                    </div>
+                    <div class="payment__container-content__filter">
+                        <button class="secondary-btn">Валютные переводы</button>
+                        <button class="secondary-btn"></button>
+                        <button class="secondary-btn"></button>
+                        <button class="secondary-btn">В обработке</button>
+                        <button class="secondary-btn">Фильтр</button>
+                        <button class="primary-btn">Создать</button>
+                    </div>
+
+                    <div class="transaction-tag">
+                        <div>0</div>
+                        <div>№</div>
+                        <div>Дата</div>
+                        <div>Контрагент</div>
+                        <div></div>
+                    </div>
+
+                    <div class="payment__container-content__transactions">
+                        <div class="transaction">
+                            
+                        </div>
+                        <div class="transaction" id="myDiv">
+
+                        </div>
+                        <div class="transaction">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>
